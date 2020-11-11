@@ -1,0 +1,82 @@
+<script type="text/javascript">
+	
+	// Variables
+	// var nombre = prompt("Ingrese su nombre", "")
+	// var texto1 = "hola"
+	// var texto2 = "mundo"
+
+	//concatenar es unir dos mas expresiones en un string
+	// var resultado = texto1+" "+texto2+" cruel"
+
+	// ventana emergente
+	//alert("Hola "+nombre+" que bueno que estes por aqui (ventana emergente)")
+
+
+	var num1 = prompt("Ingresa 1 numero", "")
+	var num2 = prompt("Ingresa 2 numero", "")
+
+	// la funcion parseInt() se utiliza para transformar textos en numeros
+
+	// operaciones
+	sumar(parseInt(num1), parseInt(num2))
+	restar(parseInt(num1), parseInt(num2))
+	multiplicar(parseInt(num1), parseInt(num2))
+	dividir(parseInt(num1), parseInt(num2))
+	residuo(parseInt(num1), parseInt(num2))
+
+
+	// mostrar en pantalla
+
+	// document.write("El resultado de la resta es: " + resta + "<br>")
+	// document.write("El resultado de la multiplicacion es: " + multiplicacion + "<br>")
+	// document.write("El resultado de la division es: " + division.toFixed(3) + "<br>")
+	// document.write("El residuo de la division es: " + residuo + "<br>")
+
+
+
+	// escritura documento
+	// document.write("Hola "+nombre+" que bueno que estes por aqui (cuerpo de la pagina)")
+
+	// escritura en la consola
+	// console.log("Hola "+nombre+" que bueno que estes por aqui (en la consola)")
+
+
+
+function sumar(n1, n2){
+	let suma = n1+n2
+	document.write("El resultado de la suma es: " + suma + "<br>")
+}
+
+function restar(n1, n2){
+	let resta = n1-n2
+	document.write("El resultado de la resta es: " + resta + "<br>")
+}
+
+function multiplicar(n1, n2){
+	let multiplicacion = n1*n2
+	document.write("El resultado de la multiplicacion es: " + multiplicacion + "<br>")
+}
+
+function dividir(n1, n2){
+	if (n2 != 0){
+		let division = n1/n2
+		document.write("El resultado de la division es: " + division.toFixed(3) + "<br>")
+
+	} else {
+		document.write("No se puede realizar la operacion, division por 0" + "<br>")
+	}
+
+}
+
+function residuo(n1, n2){
+
+	if (n2 == 0){
+		document.write("No se puede realizar la operacion, division por 0" + "<br>")
+	} else {
+		let resto = n1%n2
+		document.write("El residuo de la division es: " + resto + "<br>")
+	}
+
+}
+
+</script>
