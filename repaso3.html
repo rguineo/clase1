@@ -1,0 +1,51 @@
+<script>
+
+    var num1 = prompt("Ingrese 1° numero", "")
+    var num2 = prompt("Ingrese 2° numero", "")
+
+    document.write("resultado suma es: "+sumar(parseInt(num1), parseInt(num2))+"<br>")
+    document.write("resultado resta es: "+restar(parseInt(num1), parseInt(num2))+"<br>")
+    document.write("resultado multiplicacion es: "+multiplicar(parseInt(num1), parseInt(num2))+"<br>")
+    document.write("resultado division es: "+dividir(parseInt(num1), parseInt(num2))+"<br>")
+    document.write("resultado residuo es: "+residuo(parseInt(num1), parseInt(num2))+"<br>")
+
+    function sumar(n1, n2){
+        let resultado = n1+n2
+        return resultado
+    }
+
+    function restar(n1, n2){
+        let resultado = n1-n2
+        return resultado
+    }
+
+    function multiplicar(n1, n2){
+        let resultado = 0
+        const positivo = Math.abs(n2) == n2
+        for(i=1; i<=Math.abs(n2); i++){
+            resultado = positivo? resultado + n1:resultado-n1
+        }
+        return resultado  
+    }
+    
+    function dividir(n1, n2){
+        if(n2 == 0){
+            document.write("Division por 0")
+        } else {
+            let resultado
+            resultado = n1 / n2
+            return resultado
+        }
+    }
+
+    function residuo(n1, n2){
+        if(num2 != 0){
+            let resultado
+            resultado = n1 % n2
+            return resultado
+        } else {
+            document.write("Division por 0")
+        }        
+    }
+
+</script>

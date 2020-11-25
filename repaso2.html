@@ -1,0 +1,34 @@
+<script>
+
+    var nombre = prompt("Ingresa tu nombre", "")
+    var numero1 = prompt("Ingresa un numero ", "")
+
+ // -------------------------------------------------    
+    document.write("Ciclo While <br>")
+    var i = 1
+    while( i <= numero1 ){
+        document.write(i+". " + nombre + "<br>")
+        i++
+    }
+    document.write("<hr>")
+
+// --------------------------------------------------
+
+    document.write("Ciclo Do <br>")
+    var j = 1
+    do {
+        document.write(j+". " + nombre + "<br>")
+        j++
+    } while (j <= numero1)
+    document.write("<hr>")
+
+// --------------------------------------------------
+
+    document.write("Ciclo For <br>")
+    for(i=1; i<=numero1; i++){
+        document.write(i+". " + nombre + "<br>")
+    }
+    document.write("<hr>")
+
+
+</script>
