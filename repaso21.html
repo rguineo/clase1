@@ -1,0 +1,53 @@
+<script type="text/javascript">
+	
+	// alert("Hola Mundo - Ventana Emergente")
+	// console.log("Hola Mundo - Consola")
+
+	const PI = 3.1416 // PI: 3,1416
+	var radio = prompt("Ingresa el radio del circulo", "")
+	var operacion = prompt("Operacion", "")
+
+	// if(nombre == "Luis"){
+	// 	document.write("Hola: "+nombre+" Moreno")
+	// } else {
+	// 	document.write("Hola: "+nombre)
+	// }
+
+	// document.write("<br>")
+	
+	mostrar(radio, operacion)
+
+	function mostrar(radio, oper){
+		// if (oper == "perimetro"){
+		// 	document.write("El resultado del calculo del "+oper+" es:"+perimetro(radio).toFixed(2))
+		// } 
+		// if (oper == "area"){
+		// 	document.write("El resultado del calculo del "+oper+" es:"+area(radio).toFixed(2))
+		// }
+
+		switch(oper) {
+			case "perimetro":
+				document.write("El resultado del calculo del "+oper+" es:"+perimetro(radio).toFixed(2))
+				break
+			case "area":
+				document.write("El resultado del calculo del "+oper+" es:"+area(radio).toFixed(2))
+				break
+			default:
+				alert("No existe la operacion seleccionada")
+				break
+			}
+	}
+
+
+	function perimetro(r){
+		let resultado = 2 * PI * r
+		return resultado
+	}
+
+	function area(r){
+		let resultado = PI * (r * r)
+		return resultado
+	}
+	
+
+</script>
