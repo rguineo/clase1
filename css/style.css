@@ -49,3 +49,15 @@ header img{
     height: 50px;
     padding-top: 20px;
 }
+
+
+/*CSS para los Ejemplos PHP*/
+
+.suma{
+    font-weight: bold;
+    color: blue;
+}
+
+#parrafo {
+    font-size: 30px;
+}
